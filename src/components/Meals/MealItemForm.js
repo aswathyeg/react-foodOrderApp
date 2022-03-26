@@ -5,8 +5,12 @@ import Input from '../UI/Input';
 import classes from './MealItemForm.module.css';
 const MealItemForm=(props)=>{
     const amountInputRef = useRef();
+
     const submitHandler = event => {
          event.preventDefault();
+    const amountInputRef = useRef();
+         const enteredAmount = amountInputRef.current.value;
+         const enteredAmountNumber = + enteredAmount;
     }
     return(
         <form className={classes.form}
